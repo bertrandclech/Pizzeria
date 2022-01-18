@@ -1,0 +1,32 @@
+/* css to desktop only */
+@media screen and (min-width: 1200px) {
+    .menu-mobile {
+        display: none;
+    }
+    .menu-desktop {
+        display: block;
+    }
+
+    nav div ul{
+
+     /*   display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between; */
+    }
+
+    nav div ul li {
+        display: inline;
+        list-style: none;
+        padding: 30px 10px;
+    }
+
+    /* applique un style sur les liens de nav */
+    nav div ul li a {
+        text-decoration: none; /* supprime le soulignement */
+        font-size: 0.85rem;
+
+    /*    transition: color 500ms; */
+    } 
+    
+
+}
