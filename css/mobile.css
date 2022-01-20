@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=PT+Sans&display=swap');
 
 :root {
 --white: #ffffff;
@@ -13,10 +13,76 @@
 }
 
 * {
-    font-family: 'Arvo';
     font-size: 16px;
-    color: var(--white);
     margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'PT sans', sans-serif;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'PT sans', sans-serif;
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-family: 'PT sans', sans-serif;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: 'Open sans';
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+#btn-light,
+#btn-yellow {
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+#btn-yellow {
+    border: 1px solid var(--black);
+    color: var(--black);
+    background-color: var(--yellow);
+}
+
+#btn-light {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+header {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a,
+nav a {
+    color: var(--white);  
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.title p {
+    font-size: 1.2rem;
+    font-family: 'Open sans', sans-serif;
 }
 
 .container-100 {
@@ -24,20 +90,68 @@
     margin: auto;
 }
 
+
 .container-90 {
     width: 80%;
     margin: auto;
 }
 
-nav div {
-    background-color: var(--black);
-    display: flex;
-/*    grid: 10% auto 10%; */
-    justify-content: space-between;
-/*    align-items: center; */
-    place-items: center;
+.container {
+    margin:auto;
 }
 
-.logoHeader {
-    width: 60px;
+.logo-header {
+    width: 150px;
+    margin: 75px 0; 
+}
+
+.btns {
+    padding-bottom: 50px;
+}
+
+.separator {
+    border-bottom: 3px solid white;
+    width: 90%;
+    margin: auto;
+}
+
+main section:nth-child(1) .img-slogan {
+    margin-top: 200px;
+}
+
+main section:nth-child(1) {
+
+    background-image: url(../images/slide_1.jpg);
+    background-size: cover;
+    color: var(--white);
+ 
+}
+
+main section:nth-child(1) p {
+    margin-bottom: 50px;;
+}
+
+main section:nth-child(2) {
+    background-image: url(../images/back_2.png);
+    color: var(--black);
+}
+
+main section:nth-child(3) {
+    background-color: var(--black);
+    color: var(--white)
+}
+
+.img-top {
+    width: 40%;
+    margin: 75px 0 50px 0;
+}
+
+.img-pizza {
+    width: 40%;
+    margin: 0px 0;
+}
+
+.img-slogan {
+    width: 20%;
+    margin: 20px 0;
 }
